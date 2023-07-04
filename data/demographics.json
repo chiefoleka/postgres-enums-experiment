@@ -1,0 +1,24 @@
+{
+    "gender": ["Male", "Female", "Non-binary"],
+    "marital_status": ["Single", "Married", "Divorced", "Widowed"],
+    "ethnicity": ["Caucasian", "African-American", "Hispanic", "Asian", "Mixed"],
+    "nationality": ["American", "British", "Canadian", "Australian", "German"],
+    "education_level": ["High School", "BSc", "MSc", "PhD"],
+    "occupation": ["Teacher", "Engineer", "Doctor", "Artist", "Entrepreneur"],
+    "employment_status": ["Employed", "Unemployed", "Self-employed"],
+    "housing_status": ["Renting", "Own Home", "Living with Family"],
+    "religion": ["Christianity", "Islam", "Hinduism", "Buddhism", "Judaism"],
+    "generation": ["Baby Boomer", "Generation X", "Millennial", "Generation Z"],
+    "level_of_urbanization": ["Urban", "Suburban", "Rural"],
+    "internet_access": ["High-speed", "Moderate-speed", "Low-speed", "No access"],
+    "parental_status": ["Parent", "Non-parent"],
+    "physical_fitness_level": ["Active", "Moderately active", "Inactive"],
+    "pet_ownership": ["Dog", "Cat", "Bird", "Fish", "No pets"],
+    "car_ownership": ["Own a car", "Do not own a car"],
+    "life_satisfaction": ["Very satisfied", "Satisfied", "Neutral", "Dissatisfied", "Very dissatisfied"],
+    "second_language_literacy_level": ["Fluent", "Intermediate", "Basic", "Not literate"],
+    "type_of_housing": ["Apartment", "House", "Condo", "Townhouse"],
+    "health_condition": ["Excellent", "Good", "Fair", "Poor"],
+    "dietary_preferences": ["Vegetarian", "Vegan", "Pescatarian", "Gluten-free", "Dairy-free", "Nut-free", "Halal"]
+}
+  

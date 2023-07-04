@@ -1,0 +1,67 @@
+version: '3'
+services:
+  test-enums:
+    build:
+      context: .
+    working_dir: /app
+    command: bash -c "python src/main.py"
+    env_file:
+      .env
+    environment:
+      - POSTGRES_HOST=test-enums-db
+      - STAGE=enums
+    volumes:
+      - .:/app
+    depends_on:
+      - test-enums-db
+
+  test-enums-db:
+    image: postgres:14
+    ports:
+      - 15432:5432
+    env_file:
+      .env
+
+  test-ints:
+    build:
+      context: .
+    working_dir: /app
+    command: bash -c "python src/main.py"
+    env_file:
+      .env
+    environment:
+      - POSTGRES_HOST=test-ints-db
+      - STAGE=ints
+    volumes:
+      - .:/app
+    depends_on:
+      - test-ints-db
+
+  test-ints-db:
+    image: postgres:14
+    ports:
+      - 35432:5432
+    env_file:
+      .env
+
+  test-tables:
+    build:
+      context: .
+    working_dir: /app
+    command: bash -c "python src/main.py"
+    env_file:
+      .env
+    environment:
+      - POSTGRES_HOST=test-tables-db
+      - STAGE=tables
+    volumes:
+      - .:/app
+    depends_on:
+      - test-tables-db
+
+  test-tables-db:
+    image: postgres:14
+    ports:
+      - 25432:5432
+    env_file:
+      .env
